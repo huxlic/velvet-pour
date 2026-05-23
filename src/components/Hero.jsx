@@ -31,7 +31,7 @@ const Hero = () => {
       opacity: 0,
       duration: 1.8,
       ease: "expo.out",
-      delay: 1,
+      delay: 1, 
       stagger: 0.05,
     });
 
@@ -60,7 +60,7 @@ const Hero = () => {
       );
 
       const start = isMobile ? "top 50%" : "center 60%";
-      const end = isMobile ? "120% top" : "bottom top";
+      const end = isMobile ? "120% top" : "bottom 0";
       
       const tl = gsap.timeline({
         scrollTrigger: {
@@ -76,13 +76,16 @@ const Hero = () => {
         tl.to(videoRef.current, {
           currentTime: videoRef.current.duration,
         });
-      }
+      };
 
   }, []);
 
   return (
     <>
-      <section id="hero" className="noisy">
+      <section
+        id="hero"
+        className="noisy relative z-10 min-h-dvh w-full border border-transparent"
+      >
         <h1 className="title">MOJITO</h1>
 
         <img className="left-leaf" src={leftLeaf} alt="left leaf" />
@@ -116,13 +119,7 @@ const Hero = () => {
       </section>
 
       <div className="video absolute mix-blend-screen inset-0">
-        <video
-          ref={videoRef}
-          src={video}
-          muted
-          playsInline
-          preload="auto"
-        />
+        <video ref={videoRef} src={video} muted playsInline preload="auto" />
       </div>
     </>
   );

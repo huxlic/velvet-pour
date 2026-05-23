@@ -24,9 +24,9 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="">
+    <nav className="fixed top-0 left-0 w-full z-50">
       <div className="px-2">
-        <a href="#home" className="flex items-center gap-2">
+        <a href="#hero" className="flex items-center gap-2">
           <img src={logo} alt="logo" />
           <p className="">Velvet Pour</p>
         </a>

@@ -28,62 +28,6 @@ body {
   @apply flex justify-center items-center;
 }
 
-@layer components {
-  main {
-    @apply w-full overflow-x-hidden;
-  }
-
-  nav {
-    @apply fixed z-50 w-full;
-
-    div {
-      @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 px-5 container mx-auto;
-    }
-
-    p {
-      @apply font-modern-negra text-3xl -mb-2;
-    }
-
-    a {
-      @apply cursor-pointer text-nowrap md:text-base text-sm;
-    }
-
-    ul {
-      @apply flex-center lg:gap-12 gap-7;
-    }
-  }
-
-  .noisy {
-    @apply absolute inset-0 size-full bg-[url("../src/assets/images/noise.png")];
-  }
-
-  h1 {
-    @apply md:mt-32 mt-40 text-8xl md:text-[20vw] leading-none text-center font-modern-negra;
-  }
-
-  .left-leaf {
-    @apply absolute left-0 md:top-20 xl:top-36 2xl:top-52 md:bottom-auto -bottom-20 md:w-fit w-1/3;
-  }
-
-  .right-leaf {
-    @apply absolute right-0 md:bottom-0 xl:top-0 2xl:top-12 top-1/2 md:w-fit w-24;
-  }
-}
-@utility text-gradient {
-  background: linear-gradient(to bottom, #ffffff, #898989);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-video {
-  @apply w-full md:h-[80%] h-1/2 absolute bottom-0 left-0 md:object-contain object-bottom object-cover;
-}
-
-/* @utility flex-center {
-  @apply flex justify-center items-center;
-}
-
 @utility col-center {
   @apply flex flex-col justify-center items-center;
 }
@@ -143,7 +87,7 @@ video {
 
 
   #hero {
-    @apply relative z-10 min-h-dvh w-full border border-transparent;
+    /* @apply relative z-10 min-h-dvh w-full border border-transparent; */
 
     h1 {
       @apply md:mt-32 mt-40 text-8xl md:text-[20vw] leading-none text-center font-modern-negra;
@@ -190,7 +134,7 @@ video {
   }
 
   #cocktails {
-    @apply relative min-h-dvh w-full overflow-hidden;
+    /* @apply relative min-h-dvh w-full overflow-hidden; */
 
     #c-left-leaf {
       @apply absolute left-0 md:bottom-0 md:top-auto -top-20 md:w-fit w-1/3;
@@ -342,7 +286,7 @@ video {
       @apply grid md:grid-cols-4 grid-cols-2 md:gap-20 gap-10 sm:mb-32 mb-20 relative z-10 md:max-w-6xl md:mx-auto;
 
       button {
-        @apply md:text-3xl text-xl pb-2 cursor-pointer hover:text-yellow hover:border-yellow border-b-1 transition-colors font-modern-negra;
+        @apply md:text-3xl text-xl pb-2 cursor-pointer hover:text-yellow hover:border-yellow border-b transition-colors font-modern-negra;
       }
     }
 
@@ -426,4 +370,4 @@ video {
       @apply absolute bottom-0 right-0 lg:w-96 w-1/3 pointer-events-none;
     }
   }
-} */
+}
