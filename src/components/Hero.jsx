@@ -31,7 +31,7 @@ const Hero = () => {
       opacity: 0,
       duration: 1.8,
       ease: "expo.out",
-      delay: 1, 
+      delay: 1,
       stagger: 0.05,
     });
 
@@ -118,7 +118,7 @@ const Hero = () => {
         </div>
       </section>
 
-      <div className="video absolute mix-blend-screen inset-0">
+      <div className="mix-blend-screen inset-0">
         <video ref={videoRef} src={video} muted playsInline preload="auto" />
       </div>
     </>

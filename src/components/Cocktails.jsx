@@ -30,10 +30,7 @@ const Cocktails = () => {
   }, []);
 
   return (
-    <section
-      id="cocktails"
-      className="noisy relative z-10 min-h-dvh w-full overflow-hidden"
-    >
+    <section id="cocktails" className="noisy">
       <img src={ctLeftLeaf} alt="cocktail left leaf" id="c-left-leaf" />
       <img src={ctRightLeat} alt="cocktail right leaf" id="c-right-leaf" />
 
